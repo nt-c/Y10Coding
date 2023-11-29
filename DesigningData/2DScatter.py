@@ -40,9 +40,8 @@ ax.text(0.1, 0.125, 'Size correlates to\nFrequency of device use', horizontalali
 legend = plt.legend(prop={'size': 14, 'weight': "bold", 'family': "Silom"}, loc='upper left')
 legend.get_texts()[0].set_color("blue")
 legend.get_texts()[1].set_color("xkcd:fuchsia") 
-legend_frame = legend.get_frame() # customize the legend
-legend_frame.set_facecolor('black')
-legend_frame.set_edgecolor(textColor)
+legend.get_frame().set_facecolor('black')
+legend.get_frame().set_edgecolor(textColor)
 plt.title("Age vs Average Duration on electronic devices during COVID", color=textColor, fontweight="bold", fontname="Silom")
 plt.xlabel("Age (Years)", color=textColor, fontweight="bold", fontname="Silom") # x and y labels
 plt.ylabel("Duration (Hours)", color=textColor, fontweight="bold", fontname="Silom")
