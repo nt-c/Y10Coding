@@ -35,8 +35,8 @@ ax.tick_params(axis='x', colors=textColor) # change tick color so it shows in da
 ax.tick_params(axis='y', colors=textColor)
 ax.spines['left'].set_color(textColor) # change spine color so it shows in dark mode
 ax.spines['bottom'].set_color(textColor)
-ax.text(0.1, 0.05, 'Opacity correlates to \nNumber of devices', horizontalalignment='center', verticalalignment='center', rotation=0, transform=ax.transAxes, bbox = {'facecolor': 'black', 'ec': textColor}, fontname="Silom", size=10.5, fontweight="bold", color=textColor) # Opacity correlation textbox
-ax.text(0.1, 0.125, 'Size correlates to \nFrequency of device use', horizontalalignment='center', verticalalignment='center', rotation=0, transform=ax.transAxes, bbox = {'facecolor': 'black', 'ec': textColor}, fontname="Silom", size=9.5, fontweight="bold", color=textColor) # Size correlation textbox
+ax.text(0.1, 0.05, 'Opacity correlates to\nNumber of devices', horizontalalignment='center', verticalalignment='center', transform=ax.transAxes, bbox = {'facecolor': 'black', 'ec': textColor}, size=10, fontweight="bold", color=textColor, fontname="Silom") # Opacity correlation textbox
+ax.text(0.1, 0.125, 'Size correlates to\nFrequency of device use', horizontalalignment='center', verticalalignment='center', transform=ax.transAxes, bbox = {'facecolor': 'black', 'ec': textColor}, size=9, fontweight="bold", color=textColor, fontname="Silom") # Size correlation textbox
 legend = plt.legend(prop={'size': 14, 'weight': "bold", 'family': "Silom"}, loc='upper left')
 legend.get_texts()[0].set_color("blue")
 legend.get_texts()[1].set_color("xkcd:fuchsia") 
